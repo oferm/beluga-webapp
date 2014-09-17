@@ -1,0 +1,12 @@
+This project is depentent on the "Mule Jmxmanagement Application" with the
+following attributes:
+
+    <groupId>com.cybercom</groupId>
+    <artifactId>jmxmanagement</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+This application can be found at:
+https://svn.cybercomgroup.com/repos/talentum/trunk/jmx-management
+
+In order to build (and for the tests to succeed), it is required that the above
+Mule application is deployed and running on Mule (@localhost).

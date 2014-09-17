@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+    <definition name="base.definition"
+                template="/WEB-INF/jsp/template/layout.jsp">
+        <put-attribute name="header" value="/WEB-INF/jsp/template/header.jsp"/>
+        <put-attribute name="menu" value="/WEB-INF/jsp/template/menu.jsp"/>
+        <put-attribute name="top" value="/WEB-INF/jsp/template/top.jsp"/>
+        <put-attribute name="leftColumn" value="/WEB-INF/jsp/template/leftColumn.jsp"/>
+        <put-attribute name="body" value=""/>
+        <put-attribute name="footer" value="/WEB-INF/jsp/template/footer.jsp"/>
+    </definition>
+
+    <definition name="overview" extends="base.definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/body/overview.jsp"/>
+    </definition>
+    <definition name="index" extends="base.definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/body/index.jsp"/>
+    </definition>
+    <definition name="deployApplication" extends="base.definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/body/deployApplication.jsp"/>
+    </definition>
+    <definition name="muleApplicationDetails" extends="base.definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/body/muleApplicationDetails.jsp"/>
+    </definition>
+    <definition name="muleApplicationAdd" extends="base.definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/body/muleApplicationAdd.jsp"/>
+    </definition>
+    <definition name="server" extends="base.definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/body/server.jsp"/>
+    </definition>
+    <definition name="serverRestarted" extends="base.definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/body/serverRestarted.jsp"/>
+    </definition>
+    <definition name="properties" extends="base.definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/body/properties.jsp"/>
+    </definition>
+    <definition name="serverSetting" extends="base.definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/body/serverSetting.jsp"/>
+    </definition>
+    <definition name="serverSettingsOverview" extends="base.definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/body/serverSettingsOverview.jsp"/>
+    </definition>
+</tiles-definitions>
